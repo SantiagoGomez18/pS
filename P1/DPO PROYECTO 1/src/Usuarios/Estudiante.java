@@ -9,15 +9,15 @@ public class Estudiante extends usuario{
 	private ArrayList<String> logros = new ArrayList<>();
 	private ArrayList<String> avances = new ArrayList<String>();
 	private boolean actividadEnProgreso;
-	private ArrayList<actividad> actividadesNoExitosas = new ArrayList<>();
-	private ArrayList<actividad> actividadesTerminadas = new ArrayList<actividad>();
+	private ArrayList<String> actividadesNoExitosas = new ArrayList<>();
+	private ArrayList<String> actividadesTerminadas = new ArrayList<String>();
 	private boolean learningPathInProgress;
 	private String learningPath;
-	private ArrayList<learningPath> pathsTerminados = new ArrayList<learningPath>();
-	private ArrayList<learningPath> pathsNoExitosos = new ArrayList<learningPath>();
+	private ArrayList<String> pathsTerminados = new ArrayList<String>();
+	private ArrayList<String> pathsNoExitosos = new ArrayList<String>();
 	
-	public Estudiante(String login, String contrasena, String rol, ArrayList<String> logros, ArrayList<String> avances, boolean actividadEnProgreso, ArrayList<actividad> actividadesExitosas,
-			ArrayList<actividad> actividadesNoExitosas, String learningPath, ArrayList<learningPath> pathsTerminados, ArrayList<learningPath> pathsNoExitosos) {
+	public Estudiante(String login, String contrasena, String rol, ArrayList<String> logros, ArrayList<String> avances, boolean actividadEnProgreso, ArrayList<String> actividadesExitosas,
+			ArrayList<String> actividadesNoExitosas, String learningPath, ArrayList<String> pathsTerminados, ArrayList<String> pathsNoExitosos) {
 		super(login, contrasena, rol);
 		this.logros = logros;
 		this.avances = avances;
@@ -53,19 +53,19 @@ public class Estudiante extends usuario{
 		this.actividadEnProgreso = actividadEnProgreso;
 	}
 
-	public ArrayList<actividad> getActividadesNoExitosas() {
+	public ArrayList<String> getActividadesNoExitosas() {
 		return actividadesNoExitosas;
 	}
 
-	public void setActividadesNoExitosas(ArrayList<actividad> actividadesNoExitosas) {
+	public void setActividadesNoExitosas(ArrayList<String> actividadesNoExitosas) {
 		this.actividadesNoExitosas = actividadesNoExitosas;
 	}
 
-	public ArrayList<actividad> getActividadesTerminadas() {
+	public ArrayList<String> getActividadesTerminadas() {
 		return actividadesTerminadas;
 	}
 
-	public void setActividadesTerminadas(ArrayList<actividad> actividadesTerminadas) {
+	public void setActividadesTerminadas(ArrayList<String> actividadesTerminadas) {
 		this.actividadesTerminadas = actividadesTerminadas;
 	}
 
@@ -85,19 +85,19 @@ public class Estudiante extends usuario{
 		this.learningPath = learningPath;
 	}
 
-	public ArrayList<learningPath> getPathsTerminados() {
+	public ArrayList<String> getPathsTerminados() {
 		return pathsTerminados;
 	}
 
-	public void setPathsTerminados(ArrayList<learningPath> pathsTerminados) {
+	public void setPathsTerminados(ArrayList<String> pathsTerminados) {
 		this.pathsTerminados = pathsTerminados;
 	}
 
-	public ArrayList<learningPath> getPathsNoExitosos() {
+	public ArrayList<String> getPathsNoExitosos() {
 		return pathsNoExitosos;
 	}
 
-	public void setPathsNoExitosos(ArrayList<learningPath> pathsNoExitosos) {
+	public void setPathsNoExitosos(ArrayList<String> pathsNoExitosos) {
 		this.pathsNoExitosos = pathsNoExitosos;
 	}
 	

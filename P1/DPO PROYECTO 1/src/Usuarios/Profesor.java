@@ -5,18 +5,18 @@ import Logica.actividad;
 
 public class Profesor extends usuario {
 	
-	private ArrayList<actividad> actividades = new ArrayList<>();
+	private ArrayList<String> actividades = new ArrayList<>();
 
-	public Profesor(String login, String contrasena, String rol,  ArrayList<actividad> actividades) {
+	public Profesor(String login, String contrasena, String rol,  ArrayList<String> actividades) {
 		super(login, contrasena, rol);
 		this.actividades = actividades;
 	}
 
-	public ArrayList<actividad> getActividades() {
+	public ArrayList<String> getActividades() {
 		return actividades;
 	}
 
-	public void setActividades(ArrayList<actividad> actividades) {
+	public void setActividades(ArrayList<String> actividades) {
 		this.actividades = actividades;
 	}
 		
